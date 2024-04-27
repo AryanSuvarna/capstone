@@ -1,9 +1,14 @@
 import React from "react";
 import recipes from "../recipes";
 import Swal from "sweetalert2";
+import bruschetta from "../images/bruschetta.jpg";
+import greekSalad from "../images/greekSalad.jpg";
+import lemonDessert from "../images/lemonDessert.jpg";
 
 const Menu = () => {
-    //   console.log(recipes[0]);
+
+    const imgs = [bruschetta, greekSalad, lemonDessert];
+
     const handleOrder = (id) => {
         console.log(id);
 
@@ -42,7 +47,7 @@ const Menu = () => {
             <div className="cards">
                 {recipes.map((recipe) => (
                     <div key={recipe.id} className="menu-items">
-                        <img src={recipe.image} alt="" />
+                        <img src={imgs[recipe.id]} alt={recipe.title}  style={{"object-fit": "cover"}}/>
                         <div className="menu-content">
                             <div className="heading">
                                 <h5>{recipe.title}</h5>

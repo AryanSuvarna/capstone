@@ -18,7 +18,7 @@ const Header = () => {
 
                 {/* header image */}
                 <div className='banner-img'>
-                    <img src={headerImg} alt='restaurantImg'/>
+                    <img src={headerImg} alt='restaurantImg' style={{"object-fit": "cover"}}/>
                 </div>
             </section>
         </header>
