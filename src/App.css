@@ -144,7 +144,15 @@ form {
     background: #495e57;
 }
 .confirm {
+    text-align: center;
     padding: 10px 13%;
+}
+
+.confirm h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #F4CE14;
+
 }
 
 .form-field {
@@ -187,7 +195,7 @@ label {
 }
 
 .confirm span {
-    color: blue;
+    color: #495e57;
 }
 
 
